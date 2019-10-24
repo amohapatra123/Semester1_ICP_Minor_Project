@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class mainclass {
+public class  EncryptByPin {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
