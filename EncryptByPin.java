@@ -20,29 +20,28 @@ public class  EncryptByPin {
 	System.out.println("Your pin is : "+pin);
 	System.out.println("Enter your message");
 		String msg=y.nextLine();
+                msg=y.nextLine();
 		msg=msg.replaceAll(" ","");
 		System.out.println(msg);
 		msg=msg.toLowerCase();
 		System.out.println(msg);
     int length=msg.length();
+    int m=length/n;
+    String newpin="";
     String encrypted="";
-    for(int i=0;i<(length/n);i=i+n)
+    for(int i=1;i<=m;i++)
     {
-    	for(int j=0;j<n;j++)
-    	{
-    	  int k=msg.charAt(i)+pin.charAt(i);
-    	  if(k<=122)
-    	  {
-    		  encrypted=encrypted+((char)(msg.charAt(i)+pin.charAt(i)));
-    	  }
-    	  else if(k>122)
-    	  {
-    		  encrypted=encrypted+((char)('z'-(26-(k-122))));
-    	  }
-    	}
+        newpin=newpin+pin;
     }
-    encrypted=encrypted.toUpperCase();
-    System.out.println(encrypted);
+    int reminder;
+    if(length%n!=0)
+    {
+
+     reminder
+
+     }
+    
+    
 	
 	
 	
